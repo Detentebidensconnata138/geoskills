@@ -20,3 +20,6 @@ npm-debug.log*
 
 # Claude Code
 .claude/
+
+# Raw research data
+raw/
