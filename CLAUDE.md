@@ -1,0 +1,84 @@
+# geoskills — AI Agent Guide
+
+## Repository Overview
+
+geoskills is a **multi-skill monorepo** for Generative Engine Optimization (GEO). Each skill is a self-contained Claude Code skill that analyzes a specific aspect of a website's AI visibility.
+
+## Directory Structure
+
+```
+geoskills/
+├── .gitignore
+├── CLAUDE.md                       ← You are here
+├── README.md                       # Monorepo-level docs
+├── LICENSE
+├── package.json
+├── skills/
+│   └── geo-audit/                  # Full GEO audit skill
+│       ├── SKILL.md                # Skill definition (frontmatter + prompt)
+│       ├── README.md               # Skill documentation
+│       ├── agents/                 # Subagent definitions
+│       │   ├── geo-technical.md
+│       │   ├── geo-citability.md
+│       │   ├── geo-schema.md
+│       │   └── geo-brand.md
+│       ├── references/             # Scoring rubrics & data
+│       │   └── scoring-guide.md
+│       └── evals/                  # Evaluation test cases
+│           └── evals.json
+└── raw/                            # Research data (not a skill)
+```
+
+## Skill Internal Structure
+
+Every skill under `skills/` MUST follow this structure:
+
+```
+skills/<skill-name>/
+├── SKILL.md          # Required — skill definition with frontmatter
+├── README.md         # Required — human-readable documentation
+├── agents/           # Optional — subagent markdown files
+├── references/       # Optional — scoring guides, rubrics, data
+└── evals/            # Optional — evaluation test cases
+    └── evals.json
+```
+
+### SKILL.md Conventions
+
+- **Frontmatter** is YAML between `---` fences at the top
+- Required fields: `name`, `description`
+- `name` MUST match the directory name (e.g., `skills/geo-audit/` → `name: geo-audit`)
+- `description` should be a single sentence, max 200 characters
+- Body contains the full system prompt for the skill
+
+### Agent Files (agents/*.md)
+
+- Each file defines one subagent
+- Frontmatter fields: `name`, `description`
+- `name` format: `geo-<domain>` (e.g., `geo-technical`, `geo-citability`)
+- Body contains the agent's system prompt with scoring rubrics
+
+## Writing Style Guide
+
+- **Tone**: Professional, technical, concise
+- **Audience**: Developers and SEO professionals
+- **Formatting**: Use tables for structured data, code blocks for examples
+- **Scoring**: Always use 0-100 scale with sub-dimension breakdowns
+- **References**: Cite research sources when making claims
+- **No emojis** unless explicitly part of a UI element
+
+## Git Workflow
+
+- Branch naming: `feat/<skill-name>-<description>`, `fix/<skill-name>-<description>`
+- Commit messages: Conventional Commits format (`feat:`, `fix:`, `docs:`, `refactor:`)
+- One skill per PR when adding new skills
+- Always update root README "Available Skills" table when adding a new skill
+
+## Adding a New Skill
+
+1. Create `skills/<skill-name>/` directory
+2. Add `SKILL.md` with proper frontmatter
+3. Add `README.md` with skill documentation
+4. Add `agents/`, `references/`, `evals/` as needed
+5. Update root `README.md` Available Skills table
+6. Update this file's directory structure diagram

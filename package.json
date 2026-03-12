@@ -1,0 +1,23 @@
+{
+  "name": "geoskills",
+  "version": "1.0.0",
+  "description": "Open-source Claude Code skills for Generative Engine Optimization (GEO). Diagnose and improve your website's visibility across AI-powered search engines.",
+  "keywords": [
+    "geo",
+    "seo",
+    "ai-visibility",
+    "claude-code-skill",
+    "generative-engine-optimization",
+    "ai-search",
+    "chatgpt",
+    "perplexity",
+    "gemini"
+  ],
+  "homepage": "https://aivsrank.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anthropics/geoskills"
+  },
+  "license": "Apache-2.0",
+  "author": "AIvsRank <hello@aivsrank.com>"
+}
