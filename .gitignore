@@ -23,3 +23,11 @@ npm-debug.log*
 
 # Raw research data
 raw/
+
+# Tool runtime directories
+.playwright-mcp/
+.agents/
+.qwen/
+
+# Local skill registry (machine-specific paths)
+skills-lock.json
