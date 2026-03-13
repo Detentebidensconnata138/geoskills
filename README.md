@@ -36,7 +36,7 @@ Key research findings:
 #### Via skills.sh
 
 ```bash
-npx skills add https://github.com/Cognitic-Labs/geoskills.git
+npx skills add Cognitic-Labs/geoskills
 ```
 
 #### Via ClawHub
@@ -58,7 +58,7 @@ git clone https://github.com/Cognitic-Labs/geoskills.git ~/.claude/skills/geoski
 #### Via skills.sh
 
 ```bash
-npx skills add https://github.com/Cognitic-Labs/geoskills.git --skill geo-audit
+npx skills add Cognitic-Labs/geoskills --skill geo-audit
 ```
 
 #### Manual Install
