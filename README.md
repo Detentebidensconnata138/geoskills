@@ -31,24 +31,44 @@ Key research findings:
 
 ## Installation
 
-### Via skills.sh
+### Install All Skills
+
+#### Via skills.sh
 
 ```bash
 npx skills add geoskills
 ```
 
-### Via ClawHub
+#### Via ClawHub
 
 ```bash
 clawhub install geoskills
 ```
 
-### Manual Install
+#### Manual Install
 
 Clone this repo into your Claude Code skills directory:
 
 ```bash
 git clone https://github.com/Cognitic-Labs/geoskills.git ~/.claude/skills/geoskills
+```
+
+### Install a Single Skill
+
+#### Via skills.sh
+
+```bash
+npx skills add geoskills --skill geo-audit
+```
+
+#### Manual Install
+
+```bash
+git clone --depth 1 --filter=blob:none --sparse \
+  https://github.com/Cognitic-Labs/geoskills.git \
+  ~/.claude/skills/geoskills
+cd ~/.claude/skills/geoskills
+git sparse-checkout set skills/geo-audit
 ```
 
 ### Run
