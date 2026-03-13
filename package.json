@@ -11,12 +11,18 @@
     "ai-search",
     "chatgpt",
     "perplexity",
-    "gemini"
+    "gemini",
+    "llm",
+    "llm-optimization",
+    "ai-seo",
+    "structured-data",
+    "ai-citability",
+    "schema-markup"
   ],
   "homepage": "https://aivsrank.com",
   "repository": {
     "type": "git",
-    "url": "https://github.com/anthropics/geoskills"
+    "url": "https://github.com/Cognitic-Labs/geoskills"
   },
   "license": "Apache-2.0",
   "author": "AIvsRank <hello@aivsrank.com>"

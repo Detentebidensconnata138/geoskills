@@ -1,4 +1,4 @@
-# geoskills
+# geoskills — AI Visibility & GEO Audit Skills for Claude Code
 
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Claude Code Skills](https://img.shields.io/badge/Claude_Code-Skills-blueviolet)](https://skills.sh)
@@ -48,7 +48,7 @@ clawhub install geoskills
 Clone this repo into your Claude Code skills directory:
 
 ```bash
-git clone https://github.com/anthropics/geoskills.git ~/.claude/skills/geoskills
+git clone https://github.com/Cognitic-Labs/geoskills.git ~/.claude/skills/geoskills
 ```
 
 ### Run
@@ -71,6 +71,25 @@ export AIVSRANK_API_KEY=your_api_key_here
 ```
 
 **Without an API key**, all skills work fully — you just won't get real-time visibility measurements.
+
+---
+
+## FAQ
+
+**What is the difference between GEO and SEO?**
+SEO optimizes for link-based search engine rankings (Google, Bing). GEO optimizes for AI-powered engines — making content discoverable, citable, and recommendable by LLMs like ChatGPT, Claude, Perplexity, and Gemini.
+
+**Which AI platforms does geo-audit cover?**
+geo-audit checks access for 11 AI crawlers including GPTBot (OpenAI), Google-Extended (Gemini), ClaudeBot (Anthropic), PerplexityBot, Bytespider (ByteDance), Applebot-Extended, CCBot, Cohere, Amazonbot, FacebookBot, and Meta-ExternalAgent.
+
+**Do I need an API key?**
+No. All skills work fully without any API key. The optional `AIVSRANK_API_KEY` adds real-time AI visibility measurements from AIvsRank.com to your reports.
+
+**What does the GEO Score measure?**
+The composite GEO Score (0–100) weights four dimensions: Technical Accessibility (20%), Content Citability (35%), Structured Data (20%), and Entity & Brand Signals (25%).
+
+**How is geoskills different from traditional SEO audit tools?**
+Traditional SEO tools (Ahrefs, Semrush) measure backlinks and rankings. geoskills measures whether AI systems can read, understand, and cite your content — a fundamentally different signal set.
 
 ---
 
