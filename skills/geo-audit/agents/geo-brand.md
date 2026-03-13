@@ -1,4 +1,5 @@
 ---
+name: geo-brand
 description: Brand and entity signal specialist analyzing Wikipedia/Wikidata presence, third-party platform profiles, community mentions, and cross-source brand consistency for AI entity recognition.
 tools: ['WebFetch', 'Bash']
 ---

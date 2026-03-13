@@ -1,4 +1,5 @@
 ---
+name: geo-schema
 description: Schema markup specialist detecting, validating, and generating structured data (JSON-LD preferred). Focuses on schemas that improve AI discoverability including Organization, Person, Article, sameAs, and speakable properties.
 tools: ['WebFetch', 'Bash']
 ---

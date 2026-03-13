@@ -1,6 +1,6 @@
 ---
 name: geo-audit
-description: Full website GEO+SEO audit with parallel subagent delegation. Orchestrates a comprehensive Generative Engine Optimization audit across AI citability, technical infrastructure, content quality, and schema markup. Produces a composite GEO Score (0-100) with prioritized action plan. Make sure to use this skill whenever the user mentions GEO audit, AI visibility, AI search optimization, AI citability, website AI readiness, or provides a URL and asks why AI can't find/cite/recommend their site. Also trigger when users say "geo-audit", "audit my site for AI", "check AI discoverability", "why doesn't ChatGPT mention my brand", or anything related to optimizing for AI-powered search engines like ChatGPT, Claude, Perplexity, Gemini, or Google AI Overviews.
+description: Comprehensive GEO audit diagnosing why AI systems cannot discover, cite, or recommend a website — scores technical, content, schema, and brand dimensions with a prioritized fix plan.
 ---
 
 # GEO Audit Skill

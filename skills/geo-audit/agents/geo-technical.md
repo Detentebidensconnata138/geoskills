@@ -1,4 +1,5 @@
 ---
+name: geo-technical
 description: Technical SEO specialist analyzing crawlability, indexability, security, URL structure, mobile optimization, Core Web Vitals (INP replaces FID), server-side rendering, and JavaScript dependency.
 tools: ['WebFetch', 'Bash']
 ---

@@ -1,4 +1,5 @@
 ---
+name: geo-citability
 description: AI citability scoring and optimization specialist. Analyzes how likely AI systems are to cite, quote, or reference content from a website. Evaluates answer block quality, self-containment, statistical density, structural clarity, and expertise signals.
 tools: ['WebFetch']
 ---
