@@ -14,18 +14,23 @@ geoskills/
 ├── LICENSE
 ├── package.json
 ├── skills/
-│   └── geo-audit/                  # Full GEO audit skill
-│       ├── SKILL.md                # Skill definition (frontmatter + prompt)
-│       ├── README.md               # Skill documentation
-│       ├── references/             # Scoring rubrics, data & subagent definitions
-│       │   ├── scoring-guide.md
-│       │   └── agents/             # Subagent instruction files
-│       │       ├── geo-technical.md
-│       │       ├── geo-citability.md
-│       │       ├── geo-schema.md
-│       │       └── geo-brand.md
-│       └── evals/                  # Evaluation test cases
-│           └── evals.json
+│   ├── geo-audit/                  # Full GEO audit skill
+│   │   ├── SKILL.md                # Skill definition (frontmatter + prompt)
+│   │   ├── README.md               # Skill documentation
+│   │   ├── references/             # Scoring rubrics, data & subagent definitions
+│   │   │   ├── scoring-guide.md
+│   │   │   └── agents/             # Subagent instruction files
+│   │   │       ├── geo-technical.md
+│   │   │       ├── geo-citability.md
+│   │   │       ├── geo-schema.md
+│   │   │       └── geo-brand.md
+│   │   └── evals/                  # Evaluation test cases
+│   │       └── evals.json
+│   └── geo-fix-llmstxt/            # llms.txt generator skill
+│       ├── SKILL.md
+│       ├── README.md
+│       └── references/
+│           └── llmstxt-spec.md     # llms.txt specification reference
 └── raw/                            # Research data (not a skill)
 ```
 

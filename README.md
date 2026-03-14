@@ -27,7 +27,8 @@ Key research findings:
 
 | Skill | Description | Status |
 |-------|-------------|--------|
-| [geo-audit](skills/geo-audit/) | Full website GEO+SEO audit with composite score and prioritized fix plan | Available |
+| [geo-audit](skills/geo-audit/) | Full website GEO audit with composite score and prioritized fix plan | Available |
+| [geo-fix-llmstxt](skills/geo-fix-llmstxt/) | Generate llms.txt and llms-full.txt for AI discoverability | Available |
 
 ---
 
