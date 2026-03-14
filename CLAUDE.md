@@ -31,11 +31,16 @@ geoskills/
 │   │   ├── README.md
 │   │   └── references/
 │   │       └── llmstxt-spec.md     # llms.txt specification reference
-│   └── geo-fix-schema/             # JSON-LD schema generator skill
+│   ├── geo-fix-schema/             # JSON-LD schema generator skill
+│   │   ├── SKILL.md
+│   │   ├── README.md
+│   │   └── references/
+│   │       └── schema-templates.md # JSON-LD template patterns
+│   └── geo-fix-content/            # Content citability rewriter skill
 │       ├── SKILL.md
 │       ├── README.md
 │       └── references/
-│           └── schema-templates.md # JSON-LD template patterns
+│           └── hedge-words.md      # Hedge language dictionary
 └── raw/                            # Research data (not a skill)
 ```
 
