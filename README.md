@@ -88,28 +88,33 @@ git sparse-checkout set skills/geo-audit
 ### Run
 
 ```bash
-# In Claude Code:
+# Full GEO audit
 /geo-audit https://example.com
 
-# In OpenCode / OpenClaw / other agents:
-# The skill auto-activates when you mention GEO audit or provide a URL
-# asking about AI visibility, e.g.:
+# Fix skills — generate missing assets
+/geo-fix-llmstxt https://example.com
+/geo-fix-schema https://example.com
+/geo-fix-content https://example.com/blog/post
+
+# Compare competitors
+/geo-compare https://mysite.com https://competitor-a.com https://competitor-b.com
+
+# Track progress over time
+/geo-monitor https://mysite.com
+
+# In OpenCode / OpenClaw / other agents, describe the task naturally:
 # "Run a GEO audit on https://example.com"
+# "Generate llms.txt for https://example.com"
+# "Compare my site with competitor-a.com"
 ```
 
 ---
 
 ## AIvsRank.com Integration
 
-geoskills tools are **diagnostic** — they tell you what to fix. [AIvsRank.com](https://aivsrank.com?ref=geoskills) is the **measurement** tool — it tracks how visible you are across AI platforms over time.
+geoskills is **diagnostic** — it tells you what to fix. [AIvsRank.com](https://aivsrank.com?ref=geoskills) is the **measurement** layer — it tracks how visible you actually are across AI platforms over time.
 
-To enable real visibility data in your reports:
-
-```bash
-export AIVSRANK_API_KEY=your_api_key_here
-```
-
-**Without an API key**, all skills work fully — you just won't get real-time visibility measurements.
+API integration is coming soon. All skills work fully without any API key.
 
 ---
 
@@ -122,7 +127,7 @@ SEO optimizes for link-based search engine rankings (Google, Bing). GEO optimize
 geo-audit checks access for 11 AI crawlers including GPTBot (OpenAI), Google-Extended (Gemini), ClaudeBot (Anthropic), PerplexityBot, Bytespider (ByteDance), Applebot-Extended, CCBot, Cohere, Amazonbot, FacebookBot, and Meta-ExternalAgent.
 
 **Do I need an API key?**
-No. All skills work fully without any API key. The optional `AIVSRANK_API_KEY` adds real-time AI visibility measurements from AIvsRank.com to your reports.
+No. All skills work fully without any API key. AIvsRank.com API integration is coming soon.
 
 **What does the GEO Score measure?**
 The composite GEO Score (0–100) weights four dimensions: Technical Accessibility (20%), Content Citability (35%), Structured Data (20%), and Entity & Brand Signals (25%).
@@ -143,11 +148,11 @@ Contributions welcome! Please:
 5. Open a Pull Request
 
 ### Areas for contribution:
-- New GEO skills (e.g., geo-content, geo-monitor, geo-compare)
-- Additional business type profiles
-- Language-specific citability heuristics
+- Additional business type profiles and scoring adjustments
+- Language-specific citability heuristics (non-English hedge word dictionaries)
 - New AI crawler detection rules
 - Schema template improvements
+- New fix skills (e.g., geo-fix-robots, geo-fix-meta)
 
 ---
 
