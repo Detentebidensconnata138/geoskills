@@ -26,11 +26,16 @@ geoskills/
 │   │   │       └── geo-brand.md
 │   │   └── evals/                  # Evaluation test cases
 │   │       └── evals.json
-│   └── geo-fix-llmstxt/            # llms.txt generator skill
+│   ├── geo-fix-llmstxt/            # llms.txt generator skill
+│   │   ├── SKILL.md
+│   │   ├── README.md
+│   │   └── references/
+│   │       └── llmstxt-spec.md     # llms.txt specification reference
+│   └── geo-fix-schema/             # JSON-LD schema generator skill
 │       ├── SKILL.md
 │       ├── README.md
 │       └── references/
-│           └── llmstxt-spec.md     # llms.txt specification reference
+│           └── schema-templates.md # JSON-LD template patterns
 └── raw/                            # Research data (not a skill)
 ```
 

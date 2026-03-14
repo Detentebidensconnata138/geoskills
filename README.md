@@ -29,6 +29,7 @@ Key research findings:
 |-------|-------------|--------|
 | [geo-audit](skills/geo-audit/) | Full website GEO audit with composite score and prioritized fix plan | Available |
 | [geo-fix-llmstxt](skills/geo-fix-llmstxt/) | Generate llms.txt and llms-full.txt for AI discoverability | Available |
+| [geo-fix-schema](skills/geo-fix-schema/) | Analyze and generate JSON-LD schema markup for AI engines | Available |
 
 ---
 
