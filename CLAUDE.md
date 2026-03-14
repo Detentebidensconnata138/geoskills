@@ -2,7 +2,7 @@
 
 ## Repository Overview
 
-geoskills is a **multi-skill monorepo** for Generative Engine Optimization (GEO). Each skill is a self-contained Claude Code skill that analyzes a specific aspect of a website's AI visibility.
+geoskills is a **multi-skill monorepo** for Generative Engine Optimization (GEO). Each skill follows the open [AgentSkills](https://agentskills.io) standard and is compatible with Claude Code, OpenCode, OpenClaw, Codex CLI, Cursor, GitHub Copilot, and other AgentSkills-compatible agents.
 
 ## Directory Structure
 
@@ -48,9 +48,11 @@ skills/<skill-name>/
 
 - **Frontmatter** is YAML between `---` fences at the top
 - Required fields: `name`, `description`
+- Recommended fields: `version` (semver, e.g., `1.0.0`)
 - `name` MUST match the directory name (e.g., `skills/geo-audit/` → `name: geo-audit`)
-- `description` should be a single sentence, max 200 characters
+- `description` should include trigger phrases (20-40 words), use "Use when..." pattern
 - Body contains the full system prompt for the skill
+- Body MUST use tool-agnostic natural language (no platform-specific tool names like `WebFetch`, `Bash`, `Agent`)
 
 ### Subagent Instruction Files (references/agents/*.md)
 
@@ -79,8 +81,9 @@ skills/<skill-name>/
 ## Adding a New Skill
 
 1. Create `skills/<skill-name>/` directory
-2. Add `SKILL.md` with proper frontmatter
+2. Add `SKILL.md` with proper frontmatter (`name`, `description`, `version`)
 3. Add `README.md` with skill documentation
-4. Add `agents/`, `references/`, `evals/` as needed
-5. Update root `README.md` Available Skills table
-6. Update this file's directory structure diagram
+4. Add `references/`, `scripts/`, `evals/` as needed
+5. Subagent instructions go in `references/agents/` (not a top-level `agents/` dir)
+6. Update root `README.md` Available Skills table
+7. Update this file's directory structure diagram

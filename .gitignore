@@ -31,3 +31,6 @@ raw/
 
 # Local skill registry (machine-specific paths)
 skills-lock.json
+
+# Local TODO (not tracked)
+todo.md
