@@ -17,13 +17,13 @@ geoskills/
 │   └── geo-audit/                  # Full GEO audit skill
 │       ├── SKILL.md                # Skill definition (frontmatter + prompt)
 │       ├── README.md               # Skill documentation
-│       ├── agents/                 # Subagent definitions
-│       │   ├── geo-technical.md
-│       │   ├── geo-citability.md
-│       │   ├── geo-schema.md
-│       │   └── geo-brand.md
-│       ├── references/             # Scoring rubrics & data
-│       │   └── scoring-guide.md
+│       ├── references/             # Scoring rubrics, data & subagent definitions
+│       │   ├── scoring-guide.md
+│       │   └── agents/             # Subagent instruction files
+│       │       ├── geo-technical.md
+│       │       ├── geo-citability.md
+│       │       ├── geo-schema.md
+│       │       └── geo-brand.md
 │       └── evals/                  # Evaluation test cases
 │           └── evals.json
 └── raw/                            # Research data (not a skill)
@@ -37,8 +37,9 @@ Every skill under `skills/` MUST follow this structure:
 skills/<skill-name>/
 ├── SKILL.md          # Required — skill definition with frontmatter
 ├── README.md         # Required — human-readable documentation
-├── agents/           # Optional — subagent markdown files
-├── references/       # Optional — scoring guides, rubrics, data
+├── references/       # Optional — scoring guides, rubrics, subagent instructions
+│   └── agents/       # Optional — subagent instruction files
+├── scripts/          # Optional — executable helper scripts
 └── evals/            # Optional — evaluation test cases
     └── evals.json
 ```
@@ -51,12 +52,13 @@ skills/<skill-name>/
 - `description` should be a single sentence, max 200 characters
 - Body contains the full system prompt for the skill
 
-### Agent Files (agents/*.md)
+### Subagent Instruction Files (references/agents/*.md)
 
-- Each file defines one subagent
+- Each file defines one subagent's instructions
 - Frontmatter fields: `name`, `description`
 - `name` format: `geo-<domain>` (e.g., `geo-technical`, `geo-citability`)
-- Body contains the agent's system prompt with scoring rubrics
+- Body contains the subagent's system prompt with scoring rubrics
+- Instructions must be tool-agnostic (no platform-specific tool names)
 
 ## Writing Style Guide
 

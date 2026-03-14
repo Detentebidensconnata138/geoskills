@@ -1,11 +1,15 @@
 {
   "name": "geoskills",
   "version": "1.0.0",
-  "description": "Open-source Claude Code skills for Generative Engine Optimization (GEO). Diagnose and improve your website's visibility across AI-powered search engines.",
+  "description": "Open-source Agent Skills for Generative Engine Optimization (GEO). Diagnose and improve your website's visibility across AI-powered search engines. Compatible with Claude Code, OpenCode, OpenClaw, Codex CLI, Cursor, and more.",
   "keywords": [
     "geo",
     "seo",
     "ai-visibility",
+    "agent-skill",
+    "agentskills",
+    "openclaw",
+    "opencode",
     "claude-code-skill",
     "generative-engine-optimization",
     "ai-search",

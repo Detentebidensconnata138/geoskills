@@ -1,9 +1,11 @@
-# geoskills — AI Visibility & GEO Audit Skills for Claude Code
+# geoskills — AI Visibility & GEO Audit Agent Skills
 
 [![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Claude Code Skills](https://img.shields.io/badge/Claude_Code-Skills-blueviolet)](https://skills.sh)
+[![Agent Skills](https://img.shields.io/badge/AgentSkills-compatible-blueviolet)](https://agentskills.io)
 
-**Open-source Claude Code skills for Generative Engine Optimization (GEO).**
+**Open-source Agent Skills for Generative Engine Optimization (GEO).**
+
+Compatible with Claude Code, OpenCode, OpenClaw, Codex CLI, Cursor, GitHub Copilot, and any [AgentSkills](https://agentskills.io)-compatible agent.
 
 Optimize your website for AI-powered search engines — ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews.
 
@@ -47,10 +49,17 @@ clawhub install geoskills
 
 #### Manual Install
 
-Clone this repo into your Claude Code skills directory:
+Clone this repo into your agent's skills directory:
 
 ```bash
+# Claude Code
 git clone https://github.com/Cognitic-Labs/geoskills.git ~/.claude/skills/geoskills
+
+# OpenCode
+git clone https://github.com/Cognitic-Labs/geoskills.git ~/.config/opencode/skills/geoskills
+
+# OpenClaw (managed via clawhub, or manual)
+git clone https://github.com/Cognitic-Labs/geoskills.git ~/.openclaw/skills/geoskills
 ```
 
 ### Install a Single Skill
@@ -74,8 +83,13 @@ git sparse-checkout set skills/geo-audit
 ### Run
 
 ```bash
-# In Claude Code, just type:
+# In Claude Code:
 /geo-audit https://example.com
+
+# In OpenCode / OpenClaw / other agents:
+# The skill auto-activates when you mention GEO audit or provide a URL
+# asking about AI visibility, e.g.:
+# "Run a GEO audit on https://example.com"
 ```
 
 ---
