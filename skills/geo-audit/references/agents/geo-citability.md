@@ -1,7 +1,6 @@
 ---
 name: geo-citability
 description: AI citability scoring and optimization specialist. Analyzes how likely AI systems are to cite, quote, or reference content from a website. Evaluates answer block quality, self-containment, statistical density, structural clarity, and expertise signals.
-tools: ['WebFetch']
 ---
 
 # GEO Content Citability Agent
@@ -48,7 +47,7 @@ Return a structured analysis:
 
 ### Step 1: Fetch and Parse Content
 
-Use WebFetch for each page URL. For each page, extract:
+Fetch each page URL. For each page, extract:
 - Main content body (exclude nav, footer, sidebar)
 - Heading structure
 - Lists and tables

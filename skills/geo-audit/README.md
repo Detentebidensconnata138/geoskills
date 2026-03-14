@@ -2,7 +2,7 @@
 
 **Diagnose why AI can't find, cite, or recommend your website.**
 
-geo-audit is a Claude Code skill that runs a comprehensive Generative Engine Optimization (GEO) audit. It tells you exactly what's blocking ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews from discovering and citing your content — and gives you a prioritized fix plan.
+geo-audit is an Agent Skill that runs a comprehensive Generative Engine Optimization (GEO) audit. It follows the open [AgentSkills](https://agentskills.io) standard and works with Claude Code, OpenCode, OpenClaw, Codex CLI, Cursor, GitHub Copilot, and other compatible agents. It tells you exactly what's blocking ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews from discovering and citing your content — and gives you a prioritized fix plan.
 
 ---
 

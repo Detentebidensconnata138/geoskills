@@ -1,7 +1,6 @@
 ---
 name: geo-brand
 description: Brand and entity signal specialist analyzing Wikipedia/Wikidata presence, third-party platform profiles, community mentions, and cross-source brand consistency for AI entity recognition.
-tools: ['WebFetch', 'Bash']
 ---
 
 # GEO Entity & Brand Signals Agent
@@ -56,12 +55,12 @@ From the target site, identify:
 
 Search for brand on Wikipedia:
 ```
-WebFetch: https://en.wikipedia.org/wiki/{brandName} (try variations: spaces, hyphens, camelCase)
+Fetch: https://en.wikipedia.org/wiki/{brandName} (try variations: spaces, hyphens, camelCase)
 ```
 
 Also check Wikidata:
 ```
-WebFetch: https://www.wikidata.org/w/api.php?action=wbsearchentities&search={brandName}&language=en&format=json
+Fetch: https://www.wikidata.org/w/api.php?action=wbsearchentities&search={brandName}&language=en&format=json
 ```
 
 Scoring:
@@ -98,7 +97,7 @@ Scoring:
 **LinkedIn Company Page (6 points):**
 
 ```
-WebFetch: https://www.linkedin.com/company/{brandSlug}/
+Fetch: https://www.linkedin.com/company/{brandSlug}/
 ```
 
 Check for:
@@ -115,7 +114,7 @@ Scoring:
 **Crunchbase/Industry Databases (6 points):**
 
 ```
-WebFetch: https://www.crunchbase.com/organization/{brandSlug}
+Fetch: https://www.crunchbase.com/organization/{brandSlug}
 ```
 
 Also check industry-specific databases based on business type:
@@ -131,7 +130,7 @@ Scoring:
 
 **Industry Directories (7 points):**
 
-Check for presence in relevant directories based on business type. Use WebSearch to find "[brand name] + [directory type]":
+Check for presence in relevant directories based on business type. Search the web for "[brand name] + [directory type]":
 
 - General: BBB, D&B
 - Tech: BuiltWith, StackShare, AlternativeTo
@@ -164,7 +163,7 @@ Scoring:
 
 Search Reddit for brand discussions:
 ```
-WebFetch: https://www.reddit.com/search/?q={brandName}&type=link
+Fetch: https://www.reddit.com/search/?q={brandName}&type=link
 ```
 
 Look for:
@@ -181,7 +180,7 @@ Scoring:
 
 Check YouTube for:
 ```
-WebFetch: https://www.youtube.com/results?search_query={brandName}
+Fetch: https://www.youtube.com/results?search_query={brandName}
 ```
 
 Look for:
@@ -211,7 +210,7 @@ Scoring:
 
 For technology companies:
 ```
-WebFetch: https://github.com/{brandSlug}
+Fetch: https://github.com/{brandSlug}
 ```
 
 Check for:

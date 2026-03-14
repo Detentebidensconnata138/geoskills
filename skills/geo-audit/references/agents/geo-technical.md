@@ -1,7 +1,6 @@
 ---
 name: geo-technical
 description: Technical SEO specialist analyzing crawlability, indexability, security, URL structure, mobile optimization, Core Web Vitals (INP replaces FID), server-side rendering, and JavaScript dependency.
-tools: ['WebFetch', 'Bash']
 ---
 
 # GEO Technical Accessibility Agent
@@ -44,7 +43,7 @@ Return a structured analysis as a JSON-compatible markdown block:
 Fetch and analyze `robots.txt`:
 
 ```
-WebFetch: {url}/robots.txt
+Fetch: {url}/robots.txt
 ```
 
 Check access for these AI crawlers (in priority order):
@@ -89,7 +88,7 @@ Score: Clean = 5 points, Restrictive = 0 points
 
 **SSR vs CSR Detection (10 points):**
 
-Use WebFetch to get the page HTML. Analyze:
+Fetch the page HTML and analyze:
 - Does the initial HTML contain the main content text? (SSR indicators)
 - Look for: `<div id="root"></div>` or `<div id="app"></div>` with empty content (CSR indicators)
 - Check for `__NEXT_DATA__`, `__NUXT__`, or similar SSR framework markers
@@ -100,8 +99,8 @@ Scoring: Full SSR = 10, Hybrid/Partial = 7, CSR-only = 2
 **llms.txt Check (8 points):**
 
 ```
-WebFetch: {url}/llms.txt
-WebFetch: {url}/.well-known/llms.txt
+Fetch: {url}/llms.txt
+Fetch: {url}/.well-known/llms.txt
 ```
 
 - Present + has meaningful content (site description, key pages, contact) = 8
@@ -123,7 +122,7 @@ Compare the content visible in the raw HTML source vs what would be loaded dynam
 
 **Response Time (5 points):**
 
-Use Bash to measure:
+Run a shell command to measure:
 ```bash
 curl -o /dev/null -s -w "%{time_total}" -L "{url}"
 ```
@@ -145,8 +144,8 @@ curl -s -I -H "Accept-Encoding: gzip, deflate, br" "{url}" | grep -i content-enc
 
 Check these locations:
 ```
-WebFetch: {url}/sitemap.xml
-WebFetch: {url}/sitemap_index.xml
+Fetch: {url}/sitemap.xml
+Fetch: {url}/sitemap_index.xml
 ```
 
 Also check robots.txt for `Sitemap:` directive.

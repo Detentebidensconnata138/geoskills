@@ -1,7 +1,6 @@
 ---
 name: geo-schema
 description: Schema markup specialist detecting, validating, and generating structured data (JSON-LD preferred). Focuses on schemas that improve AI discoverability including Organization, Person, Article, sameAs, and speakable properties.
-tools: ['WebFetch', 'Bash']
 ---
 
 # GEO Structured Data Agent
@@ -44,7 +43,7 @@ Return a structured analysis:
 
 ### Step 1: Extract All Structured Data
 
-For each page, use WebFetch to get the HTML and extract:
+For each page, fetch the HTML and extract:
 
 1. **JSON-LD blocks**: Find all `<script type="application/ld+json">` tags
 2. **Microdata**: Check for `itemscope`, `itemtype`, `itemprop` attributes
