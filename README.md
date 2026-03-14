@@ -31,6 +31,8 @@ Key research findings:
 | [geo-fix-llmstxt](skills/geo-fix-llmstxt/) | Generate llms.txt and llms-full.txt for AI discoverability | Available |
 | [geo-fix-schema](skills/geo-fix-schema/) | Analyze and generate JSON-LD schema markup for AI engines | Available |
 | [geo-fix-content](skills/geo-fix-content/) | Rewrite content for AI citability with before/after comparison | Available |
+| [geo-compare](skills/geo-compare/) | Compare GEO scores across 2-3 competing websites side by side | Available |
+| [geo-monitor](skills/geo-monitor/) | Re-audit and track GEO score changes over time | Available |
 
 ---
 

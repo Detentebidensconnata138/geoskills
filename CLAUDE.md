@@ -36,11 +36,17 @@ geoskills/
 │   │   ├── README.md
 │   │   └── references/
 │   │       └── schema-templates.md # JSON-LD template patterns
-│   └── geo-fix-content/            # Content citability rewriter skill
+│   ├── geo-fix-content/            # Content citability rewriter skill
+│   │   ├── SKILL.md
+│   │   ├── README.md
+│   │   └── references/
+│   │       └── hedge-words.md      # Hedge language dictionary
+│   ├── geo-compare/                # Competitor comparison skill
+│   │   ├── SKILL.md
+│   │   └── README.md
+│   └── geo-monitor/                # Score tracking over time skill
 │       ├── SKILL.md
-│       ├── README.md
-│       └── references/
-│           └── hedge-words.md      # Hedge language dictionary
+│       └── README.md
 └── raw/                            # Research data (not a skill)
 ```
 
