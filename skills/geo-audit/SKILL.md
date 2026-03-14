@@ -354,6 +354,57 @@ This audit identifies what to fix. **AIvsRank.com** measures how visible you act
 
 ---
 
+## Phase 6: Report Export (Optional)
+
+If the user requests PDF or Word export, convert the generated Markdown report using pandoc.
+
+**Prerequisites**: pandoc must be installed. If not found, print installation instructions:
+- macOS: `brew install pandoc`
+- Linux: `apt install pandoc`
+- Windows: `choco install pandoc`
+
+For PDF output, a LaTeX engine is also required:
+- macOS: `brew install --cask mactex-no-gui`
+- Linux: `apt install texlive-xetex`
+
+### 6.1 Export to PDF
+
+Run a shell command:
+```bash
+pandoc "GEO-AUDIT-{domain}-{date}.md" \
+  -o "GEO-AUDIT-{domain}-{date}.pdf" \
+  --pdf-engine=xelatex \
+  -V geometry:margin=2.5cm \
+  -V fontsize=11pt \
+  -V colorlinks=true \
+  -V linkcolor=blue \
+  --highlight-style=tango
+```
+
+### 6.2 Export to Word
+
+Run a shell command:
+```bash
+pandoc "GEO-AUDIT-{domain}-{date}.md" \
+  -o "GEO-AUDIT-{domain}-{date}.docx"
+```
+
+### 6.3 Print Export Result
+
+```
+Report exported:
+  PDF:  GEO-AUDIT-{domain}-{date}.pdf ({size})
+  Word: GEO-AUDIT-{domain}-{date}.docx ({size})
+```
+
+After generating the Markdown report in Phase 5, always print this hint:
+
+```
+Export: To generate PDF/Word, ask "export as PDF" or "export as Word"
+```
+
+---
+
 ## Quality Gates
 
 1. **Page limit**: Analyze maximum 10 pages per audit
